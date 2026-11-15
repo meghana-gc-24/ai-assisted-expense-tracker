@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f3f0ff;
+  color: #29213d;
+}
+
+.app {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(70, 45, 120, 0.12);
+}
+
+h1 {
+  text-align: center;
+  color: #7045b5;
+  margin-bottom: 10px;
+}
+
+.app > p {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #7045b5;
+  margin: 20px 0 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #faf8ff;
+  padding: 22px;
+  border-radius: 14px;
+}
+
+label {
+  font-weight: bold;
+  color: #51416d;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #d8c9f2;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #a98be0;
+}
+
+button {
+  background: #8054c7;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #633ba8;
+}
+
+.expense {
+  background: #faf8ff;
+  border: 1px solid #e6dcf7;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 12px 0;
+}
+
+.expense p {
+  margin: 8px 0;
+}
+
+.expense button {
+  margin-top: 10px;
+  background: #dc526b;
+}
+
+.expense button:hover {
+  background: #bd354f;
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 15px;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
