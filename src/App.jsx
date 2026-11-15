@@ -3,8 +3,12 @@ import './App.css'
 
 function App() {
   const [expenses, setExpenses] = useState(() => {
-    return JSON.parse(localStorage.getItem('expenses')) || []
-  })
+  const savedExpenses = JSON.parse(localStorage.getItem('expenses'))
+  return savedExpenses || [
+    { id: 1, amount: 300, category: 'Groceries', date: new Date().toISOString().split('T')[0], note: 'Shopping' },
+    { id: 2, amount: 200, category: 'Transport', date: new Date().toISOString().split('T')[0], note: 'Travel' }
+  ]
+})
 
   const [amount, setAmount] = useState('')
   const [category, setCategory] = useState('')
